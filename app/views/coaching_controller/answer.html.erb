@@ -1,0 +1,10 @@
+<h1> <%= @query %> </h1>
+  <p>You</p>
+<% if @query.include?('?') %>
+  <h1>Silly question son</h1>
+<%else %>
+<h1>I don't care my boy</h1>
+<%end%>
+<p>Your coach</p>
+
+<h2> <%= link_to "ask a new question", ask_path %> </h2>
